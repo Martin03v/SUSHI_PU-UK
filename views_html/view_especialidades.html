@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/css/viewEntradas.css">
+    <title>Sushi Pu'uk</title>
+</head>
+<body>
+
+    <!-- Checkbox oculto para controlar la apertura del menú lateral -->
+    <input type="checkbox" id="menu-toggle" class="d-none">
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <!-- Label que actúa como botón para abrir el menú lateral -->
+            <label for="menu-toggle" class="navbar-brand d-flex align-items-center cursor-pointer">
+                <img src="/proyect_img/img_index/img_logo_eslogan.jpg" alt="Sushi Pu'uk" width="50" height="50" class="me-2 rounded-5">
+            </label>
+            
+            <h2 class="ms-2 m-0 navbar-brand d-flex align-items-center">Sushi Pu'uk</h2>
+
+            <!-- Menú hamburguesa en pantallas pequeñas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/views_html/view_entradas.html">Entrada</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/views_html/view_rollos_clasicos.html">Rollos Clasicos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/views_html/view_especialidades.html">Especialidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/views_html/view_platos_fuertes.html">Platos fuertes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/views_html/view_tacos.html">Tacos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/views_html/_view_bebidas.html">Bebidas</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Menú lateral -->
+    <div class="sidebar text-center">
+        <!-- Botón para cerrar -->
+        <label for="menu-toggle" class="close-btn">&times;</label>
+        <img src="/proyect_img/img_index/img_logo_eslogan.jpg" alt="Sushi Pu'uk" class="sidebar-logo">
+        
+        <h3>UBICACIÓN</h3>
+        <p>México 188, Ticul, Yucatán<br>📞 (997) 972 1720</p>
+        
+        <!-- Enlaces a redes sociales -->
+        <a href="https://www.facebook.com/share/1Bf1qNZhNt/">
+            <img src="/proyect_img/img_index/facebook_icon.png" width="40" alt="Facebook">
+        </a>
+        <a href="https://www.google.com/maps?q=20.396761839706265,-89.53284072882526">
+            <img src="/proyect_img/img_index/maps_icon.png" width="40" alt="Google Maps">
+        </a>
+    </div>
+
+
+        <!-- TITULO PRINCIPAL-->
+    <div class="text-container">
+        <h2 class="mt-4">ROLLOS ESPECIALES</h2>
+
+    <div class="container">
+        <div class="container mt-4">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <!-- Tarjeta de Producto -->
+                <div>
+                    <div class="card  shadow-sm border">
+                        <img src="/proyect_img/img_especialidades/img_DORITO_CHEESE_ROLL.png" class="card-img-top" alt="DORITO CHEESE ROLL">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">DORITO CHEESE ROLL</h5>
+                            <p class="text-muted">Desde <span class="fw-bold">$95.00</span></p>
+                            <p class="card-text">Por fuera: Arroz empanizado con queso manchego y tiocino.</p>
+                            <p class="card-text">Por dentro: Arrachera, doritos, filadelfia y aguacate (hass).</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Tarjeta de Producto -->
+                <div >
+                    <div class="card shadow-sm border">
+                        <img src="/proyect_img/img_especialidades/img_FLAMIN_ROLL.png" class="card-img-top" alt="FLAMIN ROLL">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">FLAMIN ROLL</h5>
+                            <p class="text-muted">Desde <span class="fw-bold">$115.00</span></p>
+                            <p class="card-text">Por fuera: Filadelfia, cheetos flamin hot triturado.</p>
+                            <p class="card-text">Por dentro: Camarón empanizado, aguacate y tampico.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Tarjeta de Producto -->
+                <div>
+                    <div class="card shadow-sm border">
+                        <img src="/proyect_img/img_especialidades/img_CRISPY_CHICKEN_ROLL.png" class="card-img-top" alt="CRISPY CHICKEN ROLL">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">
+                                CRISPY CHICKEN ROLL</h5>
+                            <p class="text-muted">Desde <span class="fw-bold">$110.00</span></p>
+                            <p class="card-text">Por fuera: Rollo capeado.</p>
+                            <p class="card-text">Por dentro: Pollo empanizado, filadelfia y aguacate.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta de Producto -->
+                <div>
+                    <div class="card shadow-sm border">
+                        <img src="/proyect_img/img_especialidades/img_SALMI_ROLL.png" class="card-img-top" alt="SALMI ROLL">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">
+                                SALMI ROLL</h5>
+                            <p class="text-muted">Desde <span class="fw-bold">$130.00</span></p>
+                            <p class="card-text">Por fuera: Salmón fresco.</p>
+                            <p class="card-text">Por dentro: Philadelphia aguacate y pepino.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div>
+            <h2>Sushi Pu'uk</h2>
+            <p>Nuestro rollo es la combinación perfecta entre sabor y experiencia. Somos un grupo empresarial 100% mexicano.</p>
+        <hr>
+        <p> 2025 Sushi Pu'uk - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

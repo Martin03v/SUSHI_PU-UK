@@ -1,0 +1,86 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex:1;
+}
+/* Menú lateral */
+/* Cursor pointer para el logo */
+.cursor-pointer {
+    cursor: pointer;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    margin-top:  75.9921px;
+    background: white;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000; 
+    background: linear-gradient(to right, #FFD700, #FFA500);
+}
+
+/* Mostrar el menú cuando el checkbox está marcado */
+#menu-toggle:checked ~ .sidebar {
+    left: 0;
+}
+
+/* Botón de cerrar */
+.close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    float: right;
+    background: none;
+    border: none;
+    color: black;
+}
+
+/* Logo dentro del menú */
+.sidebar-logo {
+    display: block;
+    margin: 20px auto;
+    width: 80px;
+}
+
+/* Redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+/*texto*/
+.text-container{
+    display: inline;
+    text-align: center;
+}
+
+footer {
+    margin-top: 1.5rem;
+    text-align: center;
+    background-color: #004080;
+    color: white;
+    padding: 15px;
+    width: 100%;
+}
+
+footer a {
+    color: #ffcc00;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
