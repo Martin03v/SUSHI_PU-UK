@@ -64,21 +64,25 @@
 
         <div class="container">
             <!-- TITULO PRINCIPAL-->
-            <div class="text-container">
+            <div class="text-container text-center">
                 <h2 class="mt-4">Bienvenidos a Sushi Pu'uk</h2>
             </div>
             <!-- PROMOCION DE APP -->
-            <div class="section-container">
-                <div class="image-container">
-                    <img src="proyect_img/img_index/phone_app_icon.png" alt="Teléfono">
-                </div>
-                <div class="text-container">
+            <div class="row flex-column-reverse flex-md-row align-items-center">
+                <!-- TEXTO -->
+                <div class="col-md-6 text-container text-center">
                     <h2>¡Te regalamos 100 MXN!</h2>
                     <p>Descarga nuestra aplicación y haz tu primer pedido para obtener un descuento exclusivo. Consulta términos y condiciones.</p>
                     <!-- BOTON DE DESCARGA-->
-                    <a href="#" class="cta-button">Descargar App</a>
+                    <a href="#" class="cta-button btn btn-primary">Descargar App</a>
                 </div>
-            </div>  
+                <!-- IMAGEN -->
+                <div class="col-md-6 text-center">
+                    <img src="proyect_img/img_index/phone_app_icon.png" alt="Teléfono" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        
             <!-- VIDEOS DE YOUTUBE usando un carusel -->
             <div class="container carousel-container">
                 <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
