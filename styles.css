@@ -1,86 +1,180 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%; /* Asegura que ocupe todo el ancho */
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-.container{
-    flex:1;
-}
 /* Menú lateral */
-/* Cursor pointer para el logo */
+
+/* Estilo para el cursor de los elementos interactivos */
 .cursor-pointer {
-    cursor: pointer;
+    cursor: pointer; /* Cambia el cursor a mano cuando el usuario pasa sobre el elemento */
 }
+
+/* Estilo del menú lateral */
 .sidebar {
-    position: fixed;
-    top: 0;
-    left: -300px;
-    width: 300px;
-    height: 100%;
-    margin-top:  75.9921px;
-    background: white;
-    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    transition: left 0.3s ease-in-out;
-    z-index: 1000; 
-    background: linear-gradient(to right, #FFD700, #FFA500);
+    position: fixed; /* El menú se mantiene fijo en la pantalla */
+    top: 0; /* Se coloca en la parte superior de la pantalla */
+    left: -300px; /* Inicialmente el menú está oculto fuera de la pantalla */
+    width: 300px; /* Ancho del menú lateral */
+    height: 100%; /* El menú ocupa toda la altura de la ventana */
+    margin-top: 96px; /* Espacio desde la parte superior */
+    background: linear-gradient(to right, #FFD700, #FFA500); /* Fondo degradado de oro a naranja */
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3); /* Sombra suave para el menú */
+    padding: 20px; /* Espaciado interno */
+    transition: left 0.3s ease-in-out; /* Animación para el movimiento del menú */
+    z-index: 1000; /* Asegura que el menú se muestre sobre otros elementos */
 }
 
-/* Mostrar el menú cuando el checkbox está marcado */
+/* El menú se desplaza hacia la izquierda cuando el checkbox de control está marcado */
 #menu-toggle:checked ~ .sidebar {
-    left: 0;
+    left: 0; /* Muestra el menú desplazándolo a la izquierda */
 }
 
-/* Botón de cerrar */
+/* Botón de cerrar en el menú lateral */
 .close-btn {
-    font-size: 30px;
-    cursor: pointer;
-    float: right;
-    background: none;
-    border: none;
-    color: black;
+    font-size: 30px; /* Tamaño del botón */
+    cursor: pointer; /* Cambia el cursor a mano para indicar que es clickeable */
+    float: right; /* Coloca el botón a la derecha */
+    background: none; /* Elimina el fondo del botón */
+    border: none; /* Elimina el borde */
+    color: black; /* Color negro para el botón */
 }
 
-/* Logo dentro del menú */
+/* Logo dentro del menú lateral */
 .sidebar-logo {
-    display: block;
-    margin: 20px auto;
-    width: 80px;
+    display: block; /* Hace que el logo sea un bloque */
+    margin: 20px auto; /* Centra el logo con un margen superior e inferior */
+    width: 80px; /* Establece un tamaño fijo para el logo */
 }
 
-/* Redes sociales */
+/* Estilo para las redes sociales dentro del menú lateral */
 .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+    display: flex; /* Usa un contenedor flexible */
+    justify-content: center; /* Centra los íconos */
+    gap: 20px; /* Espacio entre los íconos */
+    margin-top: 20px; /* Añade un margen superior */
 }
-/*texto*/
-.text-container{
+
+/* Estilo para los enlaces de las redes sociales */
+.social-icons a {
+    color: #333; /* Color gris oscuro para los enlaces */
+    transition: transform 0.3s ease, color 0.3s ease; /* Animación suave para el cambio de color y escala */
+}
+
+/* Efecto al pasar el mouse sobre los enlaces de redes sociales */
+.social-icons a:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de los íconos */
+    color: #ffcc00; /* Cambia el color a amarillo dorado */
+}
+
+/* Estilo para las imágenes de los íconos de redes sociales */
+.social-icons img {
+    width: 40px; /* Establece el tamaño de los íconos */
+}
+
+/* Contenedor principal */
+.container {
+    flex: 1; /* Hace que el contenedor ocupe el espacio restante */
+    margin-top: 20px; /* Añade un margen superior */
+}
+.text-container {
     display: inline;
-    text-align: center;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+/* Estilo para los títulos dentro de las secciones */
+.text-container h2 {
+    text-align: center; /* Centra el título */
 }
 
+/* Estilos del footer (pie de página) */
 footer {
-    margin-top: 1.5rem;
-    text-align: center;
-    background-color: #004080;
-    color: white;
-    padding: 15px;
-    width: 100%;
+    background-color: #004080; /* Fondo azul oscuro */
+    color: white; /* Texto blanco */
+    padding: 30px 0; /* Espaciado arriba y abajo */
+    width: 100%; /* Ocupa todo el ancho */
+    text-align: center; /* Centra el texto */
+    position: relative; /* Coloca el footer de forma relativa */
 }
 
-footer a {
-    color: #ffcc00;
+/* Contenedor del footer */
+footer .container {
+    max-width: 1200px; /* Ancho máximo para el contenedor */
+    margin: 0 auto; /* Centra el contenido */
 }
 
-footer a:hover {
-    color: white;
-    text-decoration: underline;
+/* Estilo para el título dentro del footer */
+footer h2 {
+    font-size: 36px; /* Tamaño grande para el título */
+    font-weight: bold; /* Negrita */
+    color: #ffcc00; /* Color amarillo dorado */
+    margin-bottom: 20px; /* Margen inferior */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+/* Estilo para los enlaces del footer */
+footer .footer-links {
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+footer .footer-link {
+    color: #ffcc00; /* Color amarillo dorado */
+    text-decoration: none; /* Elimina el subrayado */
+    margin: 0 15px; /* Espaciado entre los enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s ease, transform 0.3s ease; /* Animaciones para el cambio de color y efecto de transformación */
+}
+
+/* Efecto al pasar el mouse sobre los enlaces del footer */
+footer .footer-link:hover {
+    color: white; /* Cambia el color a blanco */
+    text-decoration: underline; /* Subraya el enlace */
+    transform: translateY(-3px); /* Mueve el enlace hacia arriba */
+}
+
+/* Línea divisoria en el footer */
+footer .footer-hr {
+    border-top: 2px solid #ffcc00; /* Línea amarilla dorada */
+    width: 60%; /* Ancho de la línea */
+    margin: 20px auto; /* Margen vertical y centra la línea */
+}
+
+/* Estilo para el texto pequeño del footer */
+footer .small {
+    font-size: 14px; /* Tamaño pequeño */
+    color: #bbb; /* Color gris claro */
+}
+
+/* Enlaces del footer en negrita */
+footer .footer-links a {
+    font-weight: bold; /* Negrita */
+}
+
+/* Estilos para las secciones de "Sobre Nosotros" */
+section h2 {
+    color: #004080; /* Color azul oscuro */
+    font-size: 28px; /* Tamaño de fuente grande */
+    font-weight: 600; /* Negrita */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+section p {
+    font-size: 18px; /* Tamaño de fuente estándar */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #333; /* Color gris oscuro */
+    margin-bottom: 30px; /* Margen inferior */
+}
+
+section ul {
+    list-style-type: none; /* Elimina las viñetas de la lista */
+    padding: 0; /* Elimina el relleno */
+}
+
+section ul li {
+    font-size: 18px; /* Tamaño de fuente estándar */
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+    color: #333; /* Color gris oscuro */
+}
+
+/* Estilo para los videos */
+video {
+    border-radius: 10px; /* Bordes redondeados */
+    margin-top: 20px; /* Margen superior */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
 }

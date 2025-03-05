@@ -1,0 +1,52 @@
+/* Estilo para las tarjetas */
+.card {
+    border-radius: 15px; /* Bordes redondeados para las tarjetas */
+    transition: transform 0.3s ease-in-out; /* Transición suave para el efecto de transformación */
+    margin-bottom: 1.5rem; /* Espaciado inferior entre tarjetas */
+}
+
+/* Estilo para el título de la tarjeta */
+.card-title {
+    text-align: center; /* Centra el texto del título */
+}
+
+/* Efecto hover sobre la tarjeta */
+.card:hover {
+    transform: scale(1.05); /* Agranda la tarjeta un 5% cuando se pasa el cursor sobre ella */
+    background: linear-gradient(to right, #FFD700, #FFA500); /* Fondo degradado de dorado a naranja */
+}
+
+
+.card-img-top {
+    width: 250px;  /* Cambiar el tamaño de la imagen */
+    height: 250px; /* Cambiar el tamaño de la imagen */
+    object-fit: cover; /* Mantiene la relación de aspecto */
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+}
+/* Estilo para asegurar que todas las tablas tengan el mismo tamaño de columnas */
+.promo-table {
+    table-layout: fixed;
+    width: 100%;
+}
+.promo-table th, .promo-table td {
+    width: 50%; /* Ambas columnas ocuparán el 50% del ancho */
+    text-align: center;
+}
+/* Estilo para encerrar formularios */
+.form-container {
+    padding: 20px;
+    border-radius: 16px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px; /* Separación entre formularios */
+}
+
+.form-container h2 {
+    font-size: 24px;
+    color: white; /* Color azul */
+    margin-bottom: 15px; /* Separación entre el título y los campos */
+}
+
+.form-container .form-label {
+    color: white; /* Color de las etiquetas */
+}
